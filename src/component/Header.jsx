@@ -23,8 +23,14 @@ export const Header = () => {
 
   return (
     <header className="fixed inset-0 w-full h-[10vh] flex  justify-between items-center py-[50px] px-[6%] z-[999] bg-[#1b1f24] transition-all duration-300 ease-in">
-      <div className="">
-        <h2 className="text-[30px] md:text-[36px] text-textColor font-[600]">
+      <div className="flex items-center">
+        <div className="block md:hidden ">
+          <img
+            src={veekee2}
+            className="w-10 h-10 rounded-[50%] object-cover border border-mainColor "
+          />
+        </div>
+        <h2 className="text-[30px] md:text-[36px] text-textColor font-bold">
           V<span className="text-[#13bbff]">ictory.</span>
         </h2>
       </div>
@@ -66,13 +72,6 @@ export const Header = () => {
         >
           Contact me
         </a>
-      </div>
-
-      <div className="block md:hidden ">
-        <img
-          src={veekee2}
-          className="w-[100%] h-[100px] max-h-[3rem] max-w-[6rem] rounded-[50%] object-cover border-[1px] border-mainColor "
-        />
       </div>
 
       <div
