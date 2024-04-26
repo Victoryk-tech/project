@@ -3,7 +3,7 @@ import veekee1 from "../images/veekee1.jpg";
 
 export const About = () => {
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center" id="about">
       <div className="w-full md:w-[90%] h-auto bg-secongBgColor grid grid-cols-1 md:grid-cols-2 items-center md:items-start justify-items-center md:justify-items-center gap-8 md:gap-2 py-[3rem] px-4  ">
         <div
           data-aos="zoom-in-down"
