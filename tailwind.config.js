@@ -15,12 +15,13 @@ export default {
       pfont: "1rem",
     },
     dropShadow: {
-      "2xl": [
-        "3px 3px 20px mainColor", "-2px 1px 30px #fff"
-      ],
+      "2xl": ["3px 3px 20px mainColor", "-2px 1px 30px #fff"],
     },
 
-    
+    fontFamily: {
+      inter: ["Inter",],
+    },
+
     extend: {},
   },
   plugins: [],

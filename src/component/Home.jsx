@@ -70,7 +70,7 @@ export const Home = () => {
         <div className="hidden md:block md:mt-[2rem]">
           <img
             src={veekee2}
-            className="w-[100%] h-[450px] max-w-[500px] rounded-[50%] object-cover border-[7px] border-mainColor  mt-8 "
+            className="w-[450px] h-[450px] max-w-[500px] rounded-[50%] object-cover border-[7px] border-mainColor  mt-8 "
           />
         </div>
       </div>
