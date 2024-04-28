@@ -1,12 +1,12 @@
 import React from "react";
-import ecom from "../images/ecom.png";
+import advice from "../images/advice.png";
 
 export const items = [
   {
     id: 1,
-    title: "Calculator",
+    title: "Advice App",
     description:
-      "Explore my HTML, CSS, and JavaScript calculator project. Designed  with simplicity in mind, it showcases my ability to create  practical and user-friendly tools. The focus is on clean design, responsive functionality, and reliable performance for everyday calculations.",
+      "Explore my React, Tailwind CSS advice project. Designed to encourge you and give you life advicing.It showcases my ability to put humanity first in terms of encouraging you through quotes. The focus is on the functionality, reliable performance and humanity for everyday motivation. ",
     btn1: " github repo",
     btn2: " Live demo",
   },
@@ -58,13 +58,13 @@ export const Project = () => {
                 <div className="flex items-center justify-center gap-[1.5rem] mt-[1.5rem]">
                   <a
                     className="inline-block bg-[transparent] text-mainColor border-2 border-mainColor rounded-[8px] text-[15px] font-[600] transition-all duration-500 ease-out p-[8px] hover:bg-mainColor hover:text-bgColor hover:scale-[1.1] hover:shadow-[0_0_20px_#13bbff]"
-                    href="$"
+                    href="https://github.com/Victoryk-tech/Advise"
                   >
                     {item.btn1}
                   </a>
                   <a
                     className="inline-block bg-[transparent] text-mainColor border-2 border-mainColor rounded-[8px] text-[15px] font-[600] transition-all duration-500 ease-out p-[8px] hover:bg-mainColor hover:text-bgColor hover:scale-[1.1] hover:shadow-[0_0_20px_#13bbff]"
-                    href="#"
+                    href="https://victory-is-advicing-you.onrender.com"
                   >
                     {item.btn2}
                   </a>
@@ -73,7 +73,7 @@ export const Project = () => {
 
               <div className="hidden md:block mw-[40%] h-[40%] ml-[10rem] mt-[3rem]">
                 <img
-                  src={ecom}
+                  src={advice}
                   className="w-[40%] h-[40%] ml-[10rem] mt-[3rem]"
                 />
               </div>

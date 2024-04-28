@@ -14,7 +14,7 @@ export const Contact = () => {
           className="flex items-center justify-center mt-[3.2rem]"
           data-aos="zoom-in"
         >
-          <form action="" className="relative w-[350px] md:w-[600px]">
+          <form action="" className="relative w-[350px] p-2 md:w-[600px]">
             <input
               className="w-[100%] p-5 border-none outline-none shadow-[0_0_5px_#13bbff] bg-[#2d343f] text-textColor mb-5 rounded-[8px]"
               type="text"
