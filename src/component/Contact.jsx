@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 
 export const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_g7rll1a', 'template_o1p5u1o', form.current, {
+        publicKey: '-WPNNDlgaDPUqR8em',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     
       <section className="pb-[3rem]" id="contact">
@@ -14,22 +36,24 @@ export const Contact = () => {
           className="flex items-center justify-center mt-[3.2rem]"
           data-aos="zoom-in"
         >
-          <form action="" className="relative w-[350px] p-2 md:w-[600px]">
+          <form action="" ref={form} onSubmit={sendEmail} className="relative w-[350px] p-2 md:w-[600px]">
             <input
               className="w-[100%] p-5 border-none outline-none shadow-[0_0_5px_#13bbff] bg-[#2d343f] text-textColor mb-5 rounded-[8px]"
               type="text"
+              name="from_name"
               placeholder="Your name"
               required
             />
             <input
               className="w-[100%] p-5 border-none outline-none shadow-[0_0_5px_#13bbff] bg-[#2d343f] text-textColor mb-5 rounded-[8px]"
               type="email"
+              name="from_email"
               placeholder="Email Address"
               required
             />
             <textarea
               className="w-[100%] p-5 border-none outline-none shadow-[0_0_5px_#13bbff] bg-[#2d343f] text-textColor mb-5 rounded-[8px]"
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="10"

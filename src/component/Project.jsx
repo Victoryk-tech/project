@@ -37,12 +37,13 @@ export const Project = () => {
       </div>
 
       <div
-        className="flex flex-col justify-center items-start"
+        className="flex flex-col justify-center items-start sm:p-2"
         data-aos="zoom-in-up"
       >
         {items.map((item, index) => {
           return (
             <div
+            
               key={index}
               className="w-full h-auto flex items-start md:items-start justify-start md:justify-between mt-[3rem]"
             >
