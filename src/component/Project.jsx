@@ -1,5 +1,6 @@
 import React from "react";
 import advice from "../images/advice.png";
+import lilies from "../images/lilies.png"
 
 export const items = [
   {
@@ -12,9 +13,9 @@ export const items = [
   },
   {
     id: 2,
-    title: "Calculator",
+    title: "FOOD APP",
     description:
-      "Explore my HTML, CSS, and JavaScript calculator project. Designed  with simplicity in mind, it showcases my ability to create  practical and user-friendly tools. The focus is on clean design, responsive functionality, and reliable performance for everyday calculations.",
+      "Explore my React, and Tailwind CSS Food App project. Designed  with simplicity in mind, it showcases my ability to create  practical and user-friendly tools. The focus is on clean design, responsive functionality, and reliable performance for everyday food satisfaction.",
     btn1: " github repo",
     btn2: " Live demo",
   },
@@ -48,7 +49,7 @@ export const Project = () => {
               className="w-full h-auto flex items-start md:items-start justify-start md:justify-between mt-[3rem]"
             >
               <div className="text-center w-full md:w-[50%]  h-auto">
-                <h2 className="mb-[3rem] text-[2rem] md:text-[2.9rem]">
+                <h2 className="mb-[2rem] text-[2rem] md:text-[2.9rem]">
                   {item.title}
                 </h2>
 

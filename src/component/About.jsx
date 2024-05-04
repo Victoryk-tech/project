@@ -16,11 +16,11 @@ export const About = () => {
           />
         </div>
 
-        <div className="text-center md:pt-[5rem] pt-1" data-aos="zoom-in-up">
+        <div className="text-center  md:pt-[5rem] pt-1" data-aos="zoom-in-up">
           <h2 className="text-[28px] md:text-[33px] leading-9 mb-4 md:mb-10 font-[600]">
             I am a <span className="text-[#13bbff]">Frontend Developer</span>
           </h2>
-          <div className="gap-4 pb-6 flex flex-col">
+          <div className="gap-4 pb-6 flex flex-col px-3 md:px-0">
             <p className="text-textColor font[600] text-[19px]">
               speciality:
               <span className="text-otherColor text-[1rem] font-[400] ml-[8px]">
