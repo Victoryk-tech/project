@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
@@ -6,6 +6,8 @@ export const Contact = () => {
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
+
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,7 +21,6 @@ export const Contact = () => {
           setSucMsg(true);
           setIsLoading(false);
           form.current.reset(); //to reset form
-          // console.log('SUCCESS!');
         },
 
         (error) => {
@@ -30,8 +31,14 @@ export const Contact = () => {
       );
   };
 
+  useEffect(() => {
+    if (sucMsg && !isLoading) {
+      form.current.reset()
+    }
+  });
   return (
-    <section className="pb-[3rem]" id="contact">
+    
+    <section className="pb-[3rem]"  id="contact">
       <div
         className=" text-center pt-14 md:pt-[1rem] mb-[3rem]"
         data-aos="fade-down"
@@ -46,7 +53,7 @@ export const Contact = () => {
         data-aos="zoom-in"
       >
         <form
-          action=""
+          action="form"
           ref={form}
           onSubmit={sendEmail}
           className="relative w-[350px] p-2 md:w-[600px]"
@@ -60,6 +67,7 @@ export const Contact = () => {
           />
           <input
             className="w-[100%] p-5 border-none outline-none shadow-[0_0_5px_#13bbff] bg-[#2d343f] text-textColor mb-5 rounded-[8px]"
+          
             type="email"
             name="from_email"
             placeholder="Email Address"
@@ -79,7 +87,7 @@ export const Contact = () => {
               Sent Successfully!
             </p>
           )}
-          {error && <p>An error occurred!</p>}
+          {error && <p className="text-mainColor mt-[-1.3rem] mb-3 text-[14px]">An error occurred!</p>}
           <div>
             <button
               type="submit"

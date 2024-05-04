@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import veekee2 from "../images/veekee2.jpg";
 
 export const Header = () => {
@@ -42,36 +43,49 @@ export const Header = () => {
         >
           Home
         </a>
-        <a
-          href="#"
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={500}
           className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
-          // onClick={handleScrollToAbout}
         >
           About
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-5}
+          duration={500}
           className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
-        >
-          Service
-        </a>
-        <a
-          href="#"
-          className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
-          // onClick={handleScrollToProject}
         >
           Projects
-        </a>
+        </Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
+        >
+          Contact
+        </Link>
       </div>
 
       <div className="hidden md:block" id="top-btnn">
-        <a
-          href="#"
-          // onclick={handleScrollToContact}
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-63}
+          duration={500}
           className="inline-block py-[11px] px-[26px] bg-transparent text-mainColor border-2 border-mainColor rounded-[8px] text-[15px] font-[600] transition-all duration-500 ease-out hover:bg-mainColor hover:text-bgColor hover:shadow-[0_0_20px_#13bbff] hover:scale-[1.1]"
         >
           Contact me
-        </a>
+        </Link>
       </div>
 
       <div
@@ -105,33 +119,42 @@ export const Header = () => {
             >
               Home
             </a>
-            <a
-              href="#"
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-90}
+              duration={500}
               className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
-              onclick="scroll_to_target()"
             >
               About
-            </a>
+            </Link>
             <a
               href="#"
               className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
             >
               Service
             </a>
-            <a
-              href="#"
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-97}
+              duration={500}
               className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
-              onclick=" scroll_to_projects()"
             >
               Projects
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-63}
+              duration={500}
               className="text-[1rem] font-[500] text-otherColor transition-all duration-500 ease-out hover:text-mainColor hover:drop-shadow-[10px_15px_40px_#13bbff,-2px_1px_30px_#fff]"
-              onclick="scroll_to_contact()"
             >
               Contact
-            </a>
+            </Link>
           </div>
         ) : null}
       </div>

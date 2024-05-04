@@ -29,9 +29,9 @@ export const items = [
 ];
 export const Project = () => {
   return (
-    <section className="md:p-[5rem] w-[100%] h-auto px-[1rem]" id="projects">
+    <section className="md:p-[5rem] w-[100%] h-auto px-[2rem]" id="projects">
       <div className="text-center mt-[3rem]" data-aos="fade-down">
-        <h2 className="text-[2rem] md:text-[2.9rem] leading-8 mb-4 font-[600]">
+        <h2 className="text-[2rem] md:text-[2.9rem] leading-8 mb-1 font-[600]">
           My <span className="text-mainColor">Projects</span>
         </h2>
       </div>

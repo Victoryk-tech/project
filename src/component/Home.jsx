@@ -3,7 +3,7 @@ import veekee2 from "../images/veekee2.jpg";
 
 export const Home = () => {
   return (
-    <section className="md:p-[3rem]">
+    <section className="md:p-[3rem]" id="home">
       <div className="flex  gap-[5rem] mb-[3rem]">
         <div className="mt-[6rem] ml-2 md:w-[70%]  pl-3" data-aos="fade-in">
           <h4 className="text-[1.6rem] mb-2 font-[500]">Hello,</h4>
@@ -35,13 +35,13 @@ export const Home = () => {
               {" "}
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a
+            {/* <a
               href="https://www.instagram.com/iam_veekee_"
               className="flex items-center justify-center h-[40px] w-[40px] text-mainColor rounded-[50%] text-[20px]  cursor-pointer shadow-[0_0_20px_transparent] transition-all duration-500 ease-out backdrop-sepia brightness-[80%] text-center hover:shadow-[0_0_20px_#13bbff] hover:scale-[1.1]"
             >
               {" "}
               <i class="fab fa-instagram"></i>
-            </a>
+            </a> */}
             <a
               href="https://github.com/Victoryk-tech"
               className="flex items-center justify-center h-[40px] w-[40px] text-mainColor rounded-[50%] text-[20px]  cursor-pointer shadow-[0_0_20px_transparent] transition-all duration-500 ease-out backdrop-sepia brightness-[80%] text-center hover:shadow-[0_0_20px_#13bbff] hover:scale-[1.1]"
