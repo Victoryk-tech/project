@@ -1,6 +1,7 @@
 import React from "react";
 import advice from "../images/advice.png";
 import lilies from "../images/lilies.png"
+import event from "../images/Event.png"
 
 export const items = [
   {
@@ -10,23 +11,27 @@ export const items = [
       "Explore my React, Tailwind CSS advice project. Designed to encourge you and give you life advicing.It showcases my ability to put humanity first in terms of encouraging you through quotes. The focus is on the functionality, reliable performance and humanity for everyday motivation. ",
     btn1: " github repo",
     btn2: " Live demo",
+    image: advice
   },
   {
     id: 2,
     title: "FOOD APP",
     description:
       "Explore my React, and Tailwind CSS Food App project. Designed  with simplicity in mind, it showcases my ability to create  practical and user-friendly tools. The focus is on clean design, responsive functionality, and reliable performance for everyday food satisfaction.",
-    btn1: " github repo",
+    btn1: <a href="https://github.com/Victoryk-tech/e-commerce">github repo</a>,
     btn2: " Live demo",
+    image: lilies
   },
   {
     id: 3,
-    title: "Calculator",
+    title: "Event App",
     description:
-      "Explore my HTML, CSS, and JavaScript calculator project. Designed  with simplicity in mind, it showcases my ability to create  practical and user-friendly tools. The focus is on clean design, responsive functionality, and reliable performance for everyday calculations.",
-    btn1: " github repo",
-    btn2: " Live demo",
+      "This is a collaboration project made to help invite people to your events. It showcases my ability to collaborate with people and create a  user-friendly website. The focus is on clean design, responsive functionality, and reliable performance for your satisfaction and make it easy for you to invite people to your event.",
+    btn1: <a href="https://github.com/JerryJeager/Will-Be-There">github repo</a>,
+    btn2: <a href="https://will-be-there.vercel.app/">Live demo</a>,
+    image: event
   },
+  
 ];
 export const Project = () => {
   return (
@@ -73,9 +78,9 @@ export const Project = () => {
                 </div>
               </div>
 
-              <div className="hidden md:block mw-[40%] h-[40%] ml-[10rem] mt-[3rem]">
+              <div className="hidden md:block w-[40%] h-[40%] ml-[10rem] mt-[3rem]">
                 <img
-                  src={advice}
+                  src={item.image}
                   className="w-[40%] h-[40%] ml-[10rem] mt-[3rem]"
                 />
               </div>

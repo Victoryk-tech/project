@@ -11,7 +11,7 @@ export const Home = () => {
             I'm <span className="text-[#13bbff]">Victory Kemele</span>
           </h1>
           <h3 className="text-[1rem] md:text-[1.3rem] font-[400] mt-[1.5rem] text-otherColor mb-[15px]">
-            I'm a Front-End Web Developer with a passion forcreating intuitive,
+            I'm a Front-End Web Developer with a passion for creating intuitive,
             dynamic and responsive user experience.
           </h3>
 
