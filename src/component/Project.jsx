@@ -26,7 +26,7 @@ export const items = [
     id: 3,
     title: "Event App",
     description:
-      "This is a collaboration project made to help invite people to your events. It showcases my ability to collaborate with people and create a  user-friendly website. The focus is on clean design, responsive functionality, and reliable performance for your satisfaction and make it easy for you to invite people to your event.",
+      "This is a collaboration project done with a team of developers to help you invite people to your events. It showcases my ability to collaborate with people and create a  user-friendly website. The focus is on clean design, responsive functionality, and reliable performance for your satisfaction and make it easy for you to invite people to your event.",
     btn1: <a href="https://github.com/JerryJeager/Will-Be-There">github repo</a>,
     btn2: <a href="https://will-be-there.vercel.app/">Live demo</a>,
     image: event
