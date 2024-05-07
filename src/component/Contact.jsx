@@ -1,14 +1,19 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import { GrStatusGood } from "react-icons/gr";
+
 export const Contact = () => {
   const [sucMsg, setSucMsg] = useState(false);
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [closeModal, setCloseModal] = useState(true);
+
   const form = useRef();
 
-  
-
+  function toggleCloseModal() {
+    setCloseModal(!closeModal);
+  }
   const sendEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -33,12 +38,11 @@ export const Contact = () => {
 
   useEffect(() => {
     if (sucMsg && !isLoading) {
-      form.current.reset()
+      form.current.reset();
     }
   });
   return (
-    
-    <section className="pb-[3rem]"  id="contact">
+    <section className="pb-[3rem]" id="contact">
       <div
         className=" text-center pt-14 md:pt-[1rem] mb-[3rem]"
         data-aos="fade-down"
@@ -67,7 +71,6 @@ export const Contact = () => {
           />
           <input
             className="w-[100%] p-5 border-none outline-none shadow-[0_0_5px_#13bbff] bg-[#2d343f] text-textColor mb-5 rounded-[8px]"
-          
             type="email"
             name="from_email"
             placeholder="Email Address"
@@ -82,12 +85,20 @@ export const Contact = () => {
             placeholder="Write message here..... "
             required
           ></textarea>
-          {sucMsg && (
-            <p className="text-mainColor mt-[-1.3rem] mb-3 text-[14px]">
-              Sent Successfully!
+          {sucMsg && closeModal && (
+            <div
+              onClick={toggleCloseModal}
+              className="text-mainColor mt-[-1.3rem] mb-3 text-[14px] p-6 fixed w-[30] h-[30%] right-[45%] top-[30%] rounded-[5px] flex flex-col items-center justify-center shadow-[0_0_5px_#13bbff] bg-[#2d343f] "
+            >
+              <GrStatusGood className="text-[6rem]"/>
+              <p className="text-[14px]">Sent Successfully!</p>
+            </div>
+          )}
+          {error && (
+            <p className="text-mainColor mt-[-1.3rem] mb-3 text-[14px]  ">
+              An error occurred!
             </p>
           )}
-          {error && <p className="text-mainColor mt-[-1.3rem] mb-3 text-[14px]">An error occurred!</p>}
           <div>
             <button
               type="submit"
