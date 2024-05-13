@@ -88,7 +88,7 @@ export const Contact = () => {
           {sucMsg && closeModal && (
             <div
               onClick={toggleCloseModal}
-              className="text-mainColor mt-[-1.3rem] mb-3 text-[14px] p-6 fixed w-[30] h-[30%] right-[45%] top-[30%] rounded-[5px] flex flex-col items-center justify-center shadow-[0_0_5px_#13bbff] bg-[#2d343f] "
+              className="text-mainColor mt-[-1.3rem] mb-3 text-[14px] p-6 fixed w-[30] h-[30%] right-[30%] md:right-[45%] top-[30%] rounded-[5px] flex flex-col items-center justify-center shadow-[0_0_5px_#13bbff] bg-[#2d343f] "
             >
               <GrStatusGood className="text-[6rem]"/>
               <p className="text-[14px]">Sent Successfully!</p>

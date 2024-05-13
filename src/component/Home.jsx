@@ -52,12 +52,12 @@ export const Home = () => {
           </div>
 
           <div className="flex gap-2">
-            <a
+            {/* <a
               href="#"
               className="inline-block py-[11px] px-[26px] bg-mainColor text-bgColor border-2 border-mainColor rounded-[8px] text-[15px] font-[600] transition-all duration-500 ease-in hover:bg-[transparent] hover:text-mainColor hover:shadow-[0_0_20px_#13bbff] "
             >
               Hire me
-            </a>
+            </a> */}
             <a
               href="#"
               className=" inline-block py-[11px] px-[26px]  rounded-[8px] text-[15px] font-[600]  bg-[transparent] text-mainColor border-2 border-solid border-mainColor hover:bg-mainColor hover:text-bgColor hover:shadow-[0_0_20px_#13bbff] transition-all duration-500 ease-in"

@@ -1,5 +1,5 @@
 import React from "react";
-import veekee1 from "../images/veekee1.jpg";
+import veekee1 from "../images/veepicture.jpg";
 
 export const About = () => {
   return (
